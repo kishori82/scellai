@@ -72,16 +72,40 @@
 
     </div>
   </header>
+<style>
+  /* Apply CSS styles to the form elements */
+  label, input,  button {
+    display: block;
+    margin-bottom: 10px; /* Adjust the margin as needed for spacing */
+  }
+   /* Adjust the width of the textarea */
+  textarea {
+    width: 100%; /* Set the desired width, for example, 100% for full width */
+  }
+</style>
 
   <section id="hero-animated" class="hero-animated d-flex align-items-center">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
       <img src="assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
       <h2>Welcome to ScellAI Solutions</h2>
       <p>Comprehensive Bioinformatics, Data Science and Machine Learning consulting.</p>
-      <!--<div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-      </div>-->
+
+          <form
+           action="https://formspree.io/f/mayrenvz"
+           method="POST"
+          >
+          <label>
+            Your email:
+            <input type="email" name="email">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
+
     </div>
   </section>
 
